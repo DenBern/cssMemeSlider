@@ -18,6 +18,7 @@ body {
 }
 
 .main-wrapper {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,7 +90,15 @@ input[type="radio"]:checked + .slider .slide {
 
 .wrapper-controls {
   display: flex;
+  justify-content: center;
+  gap: 2vw;
   padding-top: 2vh;
+  width: 100%;
+}
+
+.container-text-memes {
+  width: 15vw;
+  overflow: hidden;
 }
 
 .controls {
@@ -98,9 +107,33 @@ input[type="radio"]:checked + .slider .slide {
 }
 
 .text-memes {
-  width: 55vw;
+  width: 75vw;
+  display: flex;
+  gap: 1vw;
   transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
 }
+
+.text-mem {
+  width: 15vw;
+}
+
+#slide1:checked~.text-memes {
+  transform: translateX(0);
+}
+#slide2:checked~.text-memes {
+  transform: translateX(-20%);
+}
+#slide3:checked~.text-memes {
+  transform: translateX(-40%);
+}
+#slide4:checked~.text-memes {
+  transform: translateX(-60%);
+}
+#slide5:checked~.text-memes {
+  transform: translateX(-80%);
+}
+
 
 label {
   width: 1em;
