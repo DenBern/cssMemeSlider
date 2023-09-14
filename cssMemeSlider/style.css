@@ -18,16 +18,14 @@ body {
 }
 
 .main-wrapper {
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .slider-container {
-  width: 32vw;
-  height: 30vh;
-  overflow: hidden;
+  display: block;
 }
 
 input[type="radio"] {
@@ -37,9 +35,10 @@ input[type="radio"] {
 .slider {
   display: flex;
   gap: 1vw;
-  width: 168vw;
-  height: 100%;
+  width: 410vw;
   transition: transform 0.5s ease-in-out;
+  height: 55vh;
+  overflow: hidden;
 }
 
 .slide {
@@ -73,19 +72,19 @@ input[type="radio"]:checked + .slider .slide {
 }
 
 #slide1:checked~.slider {
-  transform: translateX(0);
+  transform: translateX(40%);
 }
 #slide2:checked~.slider {
-  transform: translateX(-20%);
+  transform: translateX(20%);
 }
 #slide3:checked~.slider {
-  transform: translateX(-40%);
+  transform: translateX(0);
 }
 #slide4:checked~.slider {
-  transform: translateX(-60%);
+  transform: translateX(-20%);
 }
 #slide5:checked~.slider {
-  transform: translateX(-80%);
+  transform: translateX(-40%);
 }
 
 .wrapper-controls {
@@ -97,7 +96,7 @@ input[type="radio"]:checked + .slider .slide {
 }
 
 .container-text-memes {
-  width: 15vw;
+  width: 40vw;
   overflow: hidden;
 }
 
@@ -107,7 +106,7 @@ input[type="radio"]:checked + .slider .slide {
 }
 
 .text-memes {
-  width: 75vw;
+  width: 200vw;
   display: flex;
   gap: 1vw;
   transition: transform 0.5s ease-in-out;
@@ -115,22 +114,27 @@ input[type="radio"]:checked + .slider .slide {
 }
 
 .text-mem {
-  width: 15vw;
+  width: 40vw;
+  font-size: 2.5rem;
+  font-weight: 600;
 }
 
-#slide1:checked~.text-memes {
+#slide1:checked~.wrapper-controls>.container-text-memes>.text-memes {
   transform: translateX(0);
 }
-#slide2:checked~.text-memes {
+
+#slide2:checked~.wrapper-controls>.container-text-memes>.text-memes {
   transform: translateX(-20%);
 }
-#slide3:checked~.text-memes {
+
+#slide3:checked~.wrapper-controls>.container-text-memes>.text-memes {
   transform: translateX(-40%);
 }
-#slide4:checked~.text-memes {
+
+#slide4:checked~.wrapper-controls>.container-text-memes>.text-memes {
   transform: translateX(-60%);
 }
-#slide5:checked~.text-memes {
+#slide5:checked~.wrapper-controls>.container-text-memes>.text-memes {
   transform: translateX(-80%);
 }
 
