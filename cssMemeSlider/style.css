@@ -75,18 +75,24 @@ input[type="radio"]:checked + .slider .slide {
   opacity: 1;
 }
 
+/* Move slide */
+
 #slide1:checked~.slider {
-  transform: translateX(10%);
+  transform: translateX(11%);
 }
+
 #slide2:checked~.slider {
   transform: translateX(-75%);
 }
+
 #slide3:checked~.slider {
   transform: translateX(-160%);
 }
+
 #slide4:checked~.slider {
   transform: translateX(-243%);
 }
+
 #slide5:checked~.slider {
   transform: translateX(-326%);
 }
@@ -123,7 +129,7 @@ input[type="radio"]:checked + .slider .slide {
   font-weight: 600;
 }
 
-/* Text slide */
+/* Move text slide */
 
 #slide1:checked~.wrapper-controls>.container-text-memes>.text-memes {
   transform: translateX(-0%);
