@@ -260,8 +260,8 @@ label {
   }
 
   label {
-    width: 0.8em;
-    height: 0.8em;
+    width: 1em;
+    height: 1em;
     margin: 0 0.3em
   }
 
@@ -284,8 +284,8 @@ label {
   }
 
   label {
-    width: 0.7em;
-    height: 0.7em;
+    width: 1em;
+    height: 1em;
     margin: 0 0.3em
   }
   .wrapper-controls {
@@ -307,8 +307,8 @@ label {
   }
 
   label {
-    width: 0.6em;
-    height: 0.6em;
+    width: 1em;
+    height: 1em;
     margin: 0 0.2em
   }
   .wrapper-controls {
