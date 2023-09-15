@@ -107,6 +107,7 @@ input[type="radio"]:checked + .slider .slide {
 .controls {
   display: flex;
   justify-content: center;
+  gap: 1vw;
 }
 
 .text-memes {
@@ -173,11 +174,17 @@ input[type="radio"]:checked + .slider .slide {
 }
 
 label {
-  width: 1em;
-  height: 1em;
+  width: 2em;
+  height: 2em;
   border-radius: 50%;
-  margin: 0 0.5em;
+  padding: 1vh;
   cursor: pointer;
+}
+
+label:hover>.btn {
+  cursor: pointer;
+  transition: 0.5s;
+  opacity: 0.5;
 }
 
 .btn {
@@ -186,12 +193,6 @@ label {
   border-radius: 50%;
   background-color: #f12929c4;
   transition: 0.5s;
-}
-
-.btn:hover {
-  cursor: pointer;
-  transition: 0.5s;
-  opacity: 0.5;
 }
 
 @media (max-width:1700px) and (min-width:1440px) {
@@ -221,11 +222,6 @@ label {
     font-size: 1.4rem;
   }
 
-  label {
-    width: 0.9em;
-    height: 0.9em;
-    margin: 0 0.3em
-  }
   .wrapper-controls {
     align-items: center
   }
@@ -240,11 +236,6 @@ label {
     font-size: 1.4rem;
   }
 
-  label {
-    width: 0.9em;
-    height: 0.9em;
-    margin: 0 0.3em
-  }
   .wrapper-controls {
     align-items: center
   }
@@ -257,12 +248,6 @@ label {
 
   .text-mem {
     font-size: 1.4rem;
-  }
-
-  label {
-    width: 1em;
-    height: 1em;
-    margin: 0 0.3em
   }
 
   .wrapper-controls {
@@ -283,11 +268,6 @@ label {
     font-size: 1.2rem;
   }
 
-  label {
-    width: 1em;
-    height: 1em;
-    margin: 0 0.3em
-  }
   .wrapper-controls {
     flex-direction: column-reverse;
   }
@@ -306,11 +286,6 @@ label {
     font-size: 0.9rem;
   }
 
-  label {
-    width: 1em;
-    height: 1em;
-    margin: 0 0.2em
-  }
   .wrapper-controls {
     flex-direction: column-reverse;
   }
