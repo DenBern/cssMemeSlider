@@ -94,7 +94,6 @@ input[type="radio"]:checked + .slider .slide {
 .wrapper-controls {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 2vw;
   padding-top: 2vh;
   width: 100%;
@@ -161,11 +160,17 @@ input[type="radio"]:checked + .slider + .navigation label {
   .slide {
     height: 49vh;
   }
+  .wrapper-controls {
+    align-items: center
+  }
 }
 
 @media (max-width:1439px) and (min-width:1367px) {
   .slide {
     height: 47vh;
+  }
+  .wrapper-controls {
+    align-items: center
   }
 }
 
@@ -183,9 +188,12 @@ input[type="radio"]:checked + .slider + .navigation label {
     height: 0.9em;
     margin: 0 0.3em
   }
+  .wrapper-controls {
+    align-items: center
+  }
 }
 
-@media (max-width:1023px) and (min-width:768px) {
+@media (max-width:1023px) and (min-width:769px) {
   .slide {
     height: 40vh;
   }
@@ -199,9 +207,12 @@ input[type="radio"]:checked + .slider + .navigation label {
     height: 0.9em;
     margin: 0 0.3em
   }
+  .wrapper-controls {
+    align-items: center
+  }
 }
 
-@media (max-width:767px) and (min-width:640px) {
+@media (max-width:768px) and (min-width:640px) {
   .slide {
     height: 33vh;
   }
@@ -214,6 +225,10 @@ input[type="radio"]:checked + .slider + .navigation label {
     width: 0.8em;
     height: 0.8em;
     margin: 0 0.3em
+  }
+
+  .wrapper-controls {
+    flex-direction: column-reverse;
   }
 }
 
@@ -235,6 +250,9 @@ input[type="radio"]:checked + .slider + .navigation label {
     height: 0.7em;
     margin: 0 0.3em
   }
+  .wrapper-controls {
+    flex-direction: column-reverse;
+  }
 }
 
 @media (max-width:499px) and (min-width:380px) {
@@ -254,6 +272,9 @@ input[type="radio"]:checked + .slider + .navigation label {
     width: 0.6em;
     height: 0.6em;
     margin: 0 0.2em
+  }
+  .wrapper-controls {
+    flex-direction: column-reverse;
   }
 }
 
